@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca2f2c25-8a9c-46ca-a59e-7d74888cbb17" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Post/Post.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Post/Post.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Content/Content.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Posts/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Post/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +12,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Nick Hlushpenko &lt;nick.hlushpenko@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectId" id="1VqavA1M31MUNaBOdWy4bDYw8qj" />
   <component name="ProjectViewState">
@@ -97,6 +99,7 @@
       <workItem from="1577983309221" duration="5354000" />
       <workItem from="1578132808344" duration="1212000" />
       <workItem from="1578134868956" duration="6274000" />
+      <workItem from="1578237101703" duration="2432000" />
     </task>
     <servers />
   </component>
@@ -112,21 +115,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.49.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577986093269" />
-    <state width="1899" height="266" key="GridCell.Tab.0.bottom" timestamp="1578145022819">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1578239853656">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578239853656" />
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1578237599849">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578237599849" />
     <state width="1899" height="266" key="GridCell.Tab.0.bottom/1920.49.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1578145022819" />
-    <state width="1899" height="266" key="GridCell.Tab.0.center" timestamp="1578145022819">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1578237599849">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578237599849" />
     <state width="1899" height="266" key="GridCell.Tab.0.center/1920.49.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1578145022819" />
-    <state width="1899" height="266" key="GridCell.Tab.0.left" timestamp="1578145022819">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1578237599848">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578237599848" />
     <state width="1899" height="266" key="GridCell.Tab.0.left/1920.49.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1578145022819" />
-    <state width="1899" height="266" key="GridCell.Tab.0.right" timestamp="1578145022819">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1578237599849">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578237599849" />
     <state width="1899" height="266" key="GridCell.Tab.0.right/1920.49.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1578145022819" />
   </component>
   <component name="XDebuggerManager">
@@ -135,18 +146,15 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/App.js</url>
           <line>8</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Profile/Posts/Posts.jsx</url>
-          <line>14</line>
-          <properties lambdaOrdinal="-1" />
+          <line>1</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

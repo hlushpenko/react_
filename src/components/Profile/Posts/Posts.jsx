@@ -6,12 +6,9 @@ const Posts = () => {
     return (
         <div>
             my posts
-            <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
+            <Post like='1' text="Hello. I am post"/>
+            <Post like='56' text="Hell"/>
+
         </div>
     )
 }
