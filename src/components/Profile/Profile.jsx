@@ -1,8 +1,7 @@
 import React from 'react';
-import s from './Profile.module.css';
 import Posts from "./Posts/Posts";
 
-const Content = () => {
+const Profile = (props) => {
     return (
         <div>
             <div>
@@ -13,8 +12,8 @@ const Content = () => {
             <div>
                 ava + description
             </div>
-            <Posts/>
+            <Posts postsData={props.postsData} />
         </div>
     )
 }
-export default Content;
+export default Profile;

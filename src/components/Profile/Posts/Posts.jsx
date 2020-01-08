@@ -1,14 +1,17 @@
 import React from 'react';
-import s from './Posts.module.css';
+//import s from './Posts.module.css';
 import Post from "./Post/Post";
 
-const Posts = () => {
+
+
+
+
+const Posts = (props) => {
+    let posts = props.postsData.map( p => <Post like={p.like} text={p.text}/>);
     return (
         <div>
-            my posts
-            <Post like='1' text="Hello. I am post"/>
-            <Post like='56' text="Hell"/>
-
+            My posts:
+            {posts}
         </div>
     )
 }
