@@ -1,5 +1,6 @@
 import React from 'react';
 import Posts from "./Posts/Posts";
+import {addPost} from "../../redux/state";
 
 const Profile = (props) => {
     return (
@@ -12,7 +13,7 @@ const Profile = (props) => {
             <div>
                 ava + description
             </div>
-            <Posts postsData={props.postsData} />
+            <Posts addPost={props.addPost} postsData={props.postsData} />
         </div>
     )
 }
