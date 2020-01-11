@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca2f2c25-8a9c-46ca-a59e-7d74888cbb17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ca2f2c25-8a9c-46ca-a59e-7d74888cbb17" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,6 +104,7 @@
       <workItem from="1578237101703" duration="11539000" />
       <workItem from="1578420786185" duration="2778000" />
       <workItem from="1578575033102" duration="7295000" />
+      <workItem from="1578733380859" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="Add props to post">
       <created>1578239902763</created>
@@ -135,7 +134,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578581992808</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="REDUX">
+      <created>1578733421980</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578733421980</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add post mechanism">
+      <created>1578733628711</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578733628711</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +159,8 @@
     <MESSAGE value="Add message components&#10;Refactor CSS" />
     <MESSAGE value="Add routing and base components" />
     <MESSAGE value="REDUX" />
-    <option name="LAST_COMMIT_MESSAGE" value="REDUX" />
+    <MESSAGE value="Add post mechanism" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add post mechanism" />
   </component>
   <component name="WindowStateProjectService">
     <state x="437" y="87" key="#ESLint" timestamp="1578251598961">
@@ -158,35 +172,35 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.49.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577986093269" />
-    <state x="354" y="0" key="CommitChangelistDialog2" timestamp="1578733420257">
+    <state x="354" y="0" key="CommitChangelistDialog2" timestamp="1578733690747">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578239901270" />
-    <state x="354" y="0" key="CommitChangelistDialog2/62.0.1304.768@62.0.1304.768" timestamp="1578733420257" />
-    <state width="1283" height="193" key="GridCell.Tab.0.bottom" timestamp="1578583778785">
+    <state x="354" y="0" key="CommitChangelistDialog2/62.0.1304.768@62.0.1304.768" timestamp="1578733690747" />
+    <state width="1283" height="193" key="GridCell.Tab.0.bottom" timestamp="1578733672265">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578237599849" />
     <state width="1899" height="266" key="GridCell.Tab.0.bottom/1920.49.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1578145022819" />
-    <state width="1283" height="193" key="GridCell.Tab.0.bottom/62.0.1304.768@62.0.1304.768" timestamp="1578583778785" />
-    <state width="1283" height="193" key="GridCell.Tab.0.center" timestamp="1578583778785">
+    <state width="1283" height="193" key="GridCell.Tab.0.bottom/62.0.1304.768@62.0.1304.768" timestamp="1578733672265" />
+    <state width="1283" height="193" key="GridCell.Tab.0.center" timestamp="1578733672265">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578237599849" />
     <state width="1899" height="266" key="GridCell.Tab.0.center/1920.49.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1578145022819" />
-    <state width="1283" height="193" key="GridCell.Tab.0.center/62.0.1304.768@62.0.1304.768" timestamp="1578583778785" />
-    <state width="1283" height="193" key="GridCell.Tab.0.left" timestamp="1578583778785">
+    <state width="1283" height="193" key="GridCell.Tab.0.center/62.0.1304.768@62.0.1304.768" timestamp="1578733672265" />
+    <state width="1283" height="193" key="GridCell.Tab.0.left" timestamp="1578733672263">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578237599848" />
     <state width="1899" height="266" key="GridCell.Tab.0.left/1920.49.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1578145022819" />
-    <state width="1283" height="193" key="GridCell.Tab.0.left/62.0.1304.768@62.0.1304.768" timestamp="1578583778785" />
-    <state width="1283" height="193" key="GridCell.Tab.0.right" timestamp="1578583778785">
+    <state width="1283" height="193" key="GridCell.Tab.0.left/62.0.1304.768@62.0.1304.768" timestamp="1578733672263" />
+    <state width="1283" height="193" key="GridCell.Tab.0.right" timestamp="1578733672265">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578237599849" />
     <state width="1899" height="266" key="GridCell.Tab.0.right/1920.49.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1578145022819" />
-    <state width="1283" height="193" key="GridCell.Tab.0.right/62.0.1304.768@62.0.1304.768" timestamp="1578583778785" />
+    <state width="1283" height="193" key="GridCell.Tab.0.right/62.0.1304.768@62.0.1304.768" timestamp="1578733672265" />
     <state x="325" y="99" key="Vcs.Push.Dialog.v2" timestamp="1578242856355">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
