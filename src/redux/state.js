@@ -1,3 +1,7 @@
+let rerenderEntireTree = () =>{
+  console.log("S ch")
+};
+
 let state;
 state = {
     profilePage: {
@@ -5,6 +9,7 @@ state = {
             {id: 1, text: 'Hi, how a u', like: 1},
             {id: 2, text: 'Its my f post', like: 55}
         ],
+        newPostText: ''
 
     },
     messagesPage: {
@@ -22,5 +27,30 @@ state = {
         ]
     }
 
-}
+};
+
+window.state = state;
+
+export const addPost = () =>{
+    let newPost = {
+       id:5,
+       text: state.profilePage.newPostText,
+       like: 0
+    };
+
+    state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = '';
+    rerenderEntireTree();
+};
+
+export const updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree();
+};
+
+export const subscribe = (observer) => {
+    rerenderEntireTree = observer;  //Спостережувач OBSERVER
+};
+
+
 export default state;

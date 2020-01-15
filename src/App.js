@@ -11,6 +11,7 @@ import Profile from "./components/Profile/Profile";
 import {BrowserRouter, Route} from "react-router-dom";
 
 
+
 const App = (props) => {
     return (
         <BrowserRouter>
@@ -19,7 +20,11 @@ const App = (props) => {
                 <Nav/>
                 <div className='app-wrapper-content'>
                     <Route path="/profile" render={() => <Profile
-                        postsData={props.state.profilePage.posts}/>}/>
+                        postsData={props.state.profilePage.posts}
+                        newPostText = {props.state.profilePage.newPostText}
+                        addPost={props.addPost}
+                        updateNewPostText = {props.updateNewPostText}/>}
+                    />
 
                     <Route path="/dialogs" render={() => <Dialogs
                         debugger

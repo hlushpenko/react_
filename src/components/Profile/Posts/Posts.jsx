@@ -3,13 +3,31 @@ import React from 'react';
 import Post from "./Post/Post";
 
 
-
-
-
 const Posts = (props) => {
-    let posts = props.postsData.map( p => <Post like={p.like} text={p.text}/>);
+    let posts = props.postsData.map(p => <Post like={p.like} text={p.text}/>);
+
+    let newPostText = React.createRef();
+
+    let addPostClickButton = () => {
+        props.addPost();
+
+    };
+
+    let postOnChange = () => {
+        let text = newPostText.current.value;
+        props.updateNewPostText(text);
+    };
+
     return (
         <div>
+            <div>
+                <textarea  onChange={postOnChange}
+                           ref = {newPostText}
+                            value={props.newPostText}/>
+            </div>
+            <div>
+                <button onClick={addPostClickButton}> Add Post</button>
+            </div>
             My posts:
             {posts}
         </div>
