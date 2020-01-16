@@ -9,7 +9,6 @@ import Settings from "./components/Settings/Settings";
 import Profile from "./components/Profile/Profile";
 
 import {BrowserRouter, Route} from "react-router-dom";
-import {addPost} from "./redux/state";
 
 
 const App = (props) => {
@@ -20,9 +19,7 @@ const App = (props) => {
                 <Nav/>
                 <div className='app-wrapper-content'>
                     <Route path="/profile" render={() => <Profile
-                        postsData={props.state.profilePage.posts}
-                        addPost={props.addPost} />}
-                    />
+                        postsData={props.state.profilePage.posts}/>}/>
 
                     <Route path="/dialogs" render={() => <Dialogs
                         debugger
