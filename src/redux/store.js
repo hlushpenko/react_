@@ -1,3 +1,6 @@
+import profileReducer from "./reducers/profile-reducer";
+import messagesReducer from "./reducers/messages-reducer";
+
 let store = {
     _state: {
         profilePage: {
@@ -16,15 +19,15 @@ let store = {
                 {id: 5, name: 'David'}
             ],
             messages: [
-                {id: 1, message: 'Hello'},
-                {id: 2, message: 'Hi'},
-                {id: 3, message: ')))))))))))))'}
-            ]
+                {id: 1, sender_id: 1, message: 'Hello'},
+                {id: 2, sender_id: 2, message: 'Hi'},
+                {id: 3, sender_id: 1, message: ')))))))))))))'}
+            ],
+            newMessageText : ''
         }
     },
 
-    _callSubscriber() {
-    },
+    _callSubscriber() { },
 
     subscriber(observer) {
         this._callSubscriber = observer;  //Спостережувач OBSERVER
@@ -34,29 +37,19 @@ let store = {
     },
 
 
-    dispatch(action) { //type: ADD-POST__
-        switch (action.type) {
-            case 'ADD-POST': {
-                let newPost = {
-                    id: 5,
-                    text: this._state.profilePage.newPostText,
-                    like: 0
-                };
+    dispatch(action) {
 
-                this._state.profilePage.posts.push(newPost);
-                this._state.profilePage.newPostText = '';
-                this._callSubscriber(this._state);
-                break;
-            }
-            case 'UPDATE-NEW-POST-TEXT': {
-                this._state.profilePage.newPostText = action.newText;
-                this._callSubscriber(this._state);
-                break;
-            }
-            default: alert('Failed dispatch');
-        }
+        this._state.profilePage = profileReducer(this._state.profilePage, action);
+        this._state.messagesPage = messagesReducer(this._state.messagesPage, action);
+
+        this._callSubscriber(this._state);
+
     }
 };
+
+
+
+
 
 window.store = store;
 
