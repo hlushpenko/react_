@@ -11,22 +11,17 @@ import {BrowserRouter, Route} from "react-router-dom";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 
 
-
-const App = (props) => {
+const App = () => {
     return (
         <BrowserRouter>
             <div className="app-wrapper">
                 <Header/>
                 <Nav/>
                 <div className='app-wrapper-content'>
-                    <Route path="/profile" render={() => <Profile
-                        postsData={props.state.profilePage}
-                        dispatch={props.dispatch} />}
+                    <Route path="/profile" render={() => <Profile/>}
                     />
 
-                    <Route path="/dialogs" render={() => <DialogsContainer
-                        dialogsData={props.state.messagesPage}
-                        dispatch={props.dispatch} />}
+                    <Route path="/dialogs" render={() => <DialogsContainer/>}
                     />
 
                     <Route path="/news" component={News}/>
