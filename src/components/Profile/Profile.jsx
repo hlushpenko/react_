@@ -1,5 +1,6 @@
 import React from 'react';
-import Posts from "./Posts/Posts";
+// import Posts from "./Posts/Posts";
+import PostsContainer from "./Posts/PostsContainer";
 
 const Profile = (props) => {
     return (
@@ -12,7 +13,7 @@ const Profile = (props) => {
             <div>
                 ava + description
             </div>
-            <Posts  dispatch = {props.dispatch}  postsData={props.postsData} />
+            <PostsContainer  dispatch = {props.dispatch}  postsData={props.postsData} />
         </div>
     )
 }
