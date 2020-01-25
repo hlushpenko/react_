@@ -1,46 +1,26 @@
 import React from 'react';
 import s from './Users.module.css'
-
+import * as axios from "axios";
+import userPhoto from "../assets/img/avatar.jpg";
 const Users = (props) => {
 
     if (props.users.length === 0) {
-        props.setUsers(
-            [
-                {
-                    id: 1,
-                    photoURL: 'https://cdn4.iconfinder.com/data/icons/men-avatars-icons-set-2/256/4-512.png',
-                    subscribe: true,
-                    fullName: 'Nickolas',
-                    status: 'Like a BOSS!!!',
-                    location: {
-                        cityName: 'Los Angeles',
-                        country: 'USA'
-                    },
-                },
-                {
-                    id: 2,
-                    photoURL: 'https://cdn4.iconfinder.com/data/icons/men-avatars-icons-set-2/256/4-512.png',
-                    subscribe: false,
-                    fullName: 'Kate',
-                    status: 'SAN ANDREAS!!!',
-                    location: {
-                        cityName: 'Las Vegas',
-                        country: 'USA'
-                    },
-                }
-            ]
-        )
+
+        axios.get("https://social-network.samuraijs.com/api/1.0/users").then(response => {
+            props.setUsers(response.data.items);
+        });
     }
+
 
     return <div>
         {
             props.users.map(u => <div key={u.id}>
                         <span>
                             <div>
-                                <img className={s.avatar} src={u.photoURL}/>
+                                <img  alt="default_avatar" src={ u.photos.small ? u.photos.small : userPhoto } className={s.avatar}  />
                             </div>
                             <div>
-                                {u.subscribe
+                                {u.followed
                                     ? <button onClick={() => {
                                         props.unsubscribe(u.id)
                                     }}> Unsubscribe</button>
@@ -54,7 +34,7 @@ const Users = (props) => {
                     <span>
                             <span>
                                 <div>
-                                    {u.fullName}
+                                    {u.name}
                                 </div>
                                 <div>
                                     {u.status}
@@ -62,10 +42,10 @@ const Users = (props) => {
                             </span>
                             <span>
                                 <div>
-                                    {u.location.cityName}
+                                    {"u.location.cityName"}
                                 </div>
                                 <div>
-                                    {u.location.country}
+                                    {"u.location.country"}
                                 </div>
                             </span>
                         </span>
