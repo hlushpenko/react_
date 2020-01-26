@@ -3,7 +3,7 @@ const UNSUBSCRIBE_USER = 'UNSUBSCRIBE-USER';
 const SET_USERS = 'SET-USERS';
 
 let initializeState = {
-    users: [  ]
+    users: []
 };
 
 const usersReducer = (state = initializeState, action) => {
