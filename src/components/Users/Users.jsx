@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./Users.module.css";
 import userPhoto from "../assets/img/avatar.jpg";
+import {Avatar} from "antd";
 
 const Users = (props) => {
 
@@ -25,8 +26,10 @@ const Users = (props) => {
                 props.users.map(u => <div key={u.id}>
                         <span>
                             <div>
-                                <img alt="default_avatar" src={u.photos.small ? u.photos.small : userPhoto}
-                                     className={s.avatar}/>
+
+                                <Avatar size={64} icon="user" />
+                                {/*<img alt="default_avatar" src={u.photos.small ? u.photos.small : userPhoto}*/}
+                                {/*     className={s.avatar}/>*/}
                             </div>
                             <div>
                                 {u.followed
