@@ -1,8 +1,7 @@
 import React from "react";
 import s from "./Users.module.css";
 import userPhoto from "../assets/img/avatar.jpg";
-import {Avatar} from "antd";
-
+import Button from 'react-bootstrap/Button';
 const Users = (props) => {
 
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
@@ -24,21 +23,21 @@ const Users = (props) => {
             </div>
             {
                 props.users.map(u => <div key={u.id}>
+
                         <span>
                             <div>
 
-                                <Avatar size={64} icon="user" />
-                                {/*<img alt="default_avatar" src={u.photos.small ? u.photos.small : userPhoto}*/}
-                                {/*     className={s.avatar}/>*/}
+                                <img alt="default_avatar" src={u.photos.small ? u.photos.small : userPhoto}
+                                     className={s.avatar}/>
                             </div>
                             <div>
                                 {u.followed
-                                    ? <button onClick={() => {
+                                    ? <Button variant="danger" onClick={() => {
                                         props.unsubscribe(u.id)
-                                    }}> Unsubscribe</button>
-                                    : <button onClick={() => {
+                                    }}> Unsubscribe</Button>
+                                    : <Button variant="success" onClick={() => {
                                         props.subscribe(u.id)
-                                    }}> Subscribe</button>
+                                    }}> Subscribe</Button>
                                 }
                             </div>
                         </span>
