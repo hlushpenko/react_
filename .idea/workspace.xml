@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae4c4c5d-0028-4bbf-a5fd-1b877b590164" name="Default Changelist" comment="57. Preloader">
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+    <list default="true" id="ae4c4c5d-0028-4bbf-a5fd-1b877b590164" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Posts/PostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Posts/PostsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/profile-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580410201089</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="59. profile page, ajax, api">
+      <created>1580837634907</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1580837634907</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +254,8 @@
     <MESSAGE value="55. Pagination" />
     <MESSAGE value="55. Presentation and Container component" />
     <MESSAGE value="57. Preloader" />
-    <option name="LAST_COMMIT_MESSAGE" value="57. Preloader" />
+    <MESSAGE value="59. profile page, ajax, api" />
+    <option name="LAST_COMMIT_MESSAGE" value="59. profile page, ajax, api" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="182" key="#ESLint" timestamp="1578139393070">
@@ -272,12 +277,12 @@
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.49.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577986093269" />
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.52.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1580149910890" />
     <state x="2420" y="316" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1982.49.1218.1024/62.0.1858.1080@1982.49.1218.1024" timestamp="1579542991579" />
-    <state x="2207" y="52" key="CommitChangelistDialog2" timestamp="1580837432631">
+    <state x="2207" y="52" key="CommitChangelistDialog2" timestamp="1580837634490">
       <screen x="1920" y="52" width="1280" height="984" />
     </state>
     <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578239901270" />
     <state x="430" y="0" key="CommitChangelistDialog2/1920.52.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1580151138376" />
-    <state x="2207" y="52" key="CommitChangelistDialog2/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1580837432631" />
+    <state x="2207" y="52" key="CommitChangelistDialog2/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1580837634490" />
     <state x="2255" y="49" key="CommitChangelistDialog2/1982.49.1218.1024/62.0.1858.1080@1982.49.1218.1024" timestamp="1579546027313" />
     <state x="478" y="0" key="CommitChangelistDialog2/1982.49.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1578511899536" />
     <state x="2255" y="52" key="CommitChangelistDialog2/1982.52.1218.1024/62.0.1858.1080@1982.52.1218.1024" timestamp="1580410200620" />
@@ -381,12 +386,12 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="712" y="281" width="540" height="524" key="StructurePopup/1982.49.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1578506634146" />
-    <state x="2227" y="184" key="Vcs.Push.Dialog.v2" timestamp="1580410203909">
-      <screen x="1982" y="52" width="1218" height="1024" />
+    <state x="2177" y="179" key="Vcs.Push.Dialog.v2" timestamp="1580837638400">
+      <screen x="1920" y="52" width="1280" height="984" />
     </state>
     <state x="275" y="94" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1578239908150" />
     <state x="386" y="134" key="Vcs.Push.Dialog.v2/1920.52.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1580146877917" />
-    <state x="2177" y="179" key="Vcs.Push.Dialog.v2/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1580031047885" />
+    <state x="2177" y="179" key="Vcs.Push.Dialog.v2/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1580837638400" />
     <state x="2227" y="181" key="Vcs.Push.Dialog.v2/1982.49.1218.1024/62.0.1858.1080@1982.49.1218.1024" timestamp="1579546029687" />
     <state x="2227" y="184" key="Vcs.Push.Dialog.v2/1982.52.1218.1024/62.0.1858.1080@1982.52.1218.1024" timestamp="1580410203909" />
     <state x="647" y="250" key="run.anything.popup" timestamp="1578504479864">
