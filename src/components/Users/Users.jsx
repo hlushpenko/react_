@@ -2,7 +2,8 @@ import React from "react";
 import s from "./Users.module.css";
 import userPhoto from "../assets/img/avatar.jpg";
 import Button from 'react-bootstrap/Button';
-import {Card, Container} from "react-bootstrap";
+import {Card, Container, Nav} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 const Users = (props) => {
 
@@ -23,18 +24,19 @@ const Users = (props) => {
             })}
         </div>
         <Card style={{width: '11rem'}}>
-            {props.users.map(u => <div>
-                key={u.id}
-                <Card.Img variant="top" alt="default_avatar" src={u.photos.small ? u.photos.small : userPhoto}
-                          className={s.avatar}/>
+            {props.users.map(u => <div key={u.id}>
+                <Nav.Link as={Link} to={'/profile/' + u.id}>
+                    <Card.Img variant="top"
+                              alt="default_avatar"
+                              src={u.photos.small ? u.photos.small : userPhoto}
+                              className={s.avatar}/>
+                </Nav.Link>
                 <Card.Body>
                     <Card.Title>{u.name}</Card.Title>
                     <Card.Text>
-                        <div>{u.status}</div>
-                        <span>
-                            <div>{"u.location.cityName"}</div>
-                            <div>{"u.location.country"}</div>
-                        </span>
+                        {u.status}
+                        <div>{"u.location.cityName"}</div>
+                        <div>{"u.location.country"}</div>
                     </Card.Text>
                     <div>
                         {u.followed

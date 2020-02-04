@@ -2,8 +2,13 @@ import React from 'react';
 // import Posts from "./Posts/Posts";
 import PostsContainer from "./Posts/PostsContainer";
 import {Container, Jumbotron} from "react-bootstrap";
+import Loading from "../Loading/Loading";
 
-const Profile = () => {
+const Profile = (props) => {
+    if(!props.profile){
+        return <Loading/>
+    }
+
     return <Container>
         <div>
             <img
@@ -11,6 +16,8 @@ const Profile = () => {
                 alt=""/>
         </div>
         <div>
+
+            <img src={props.profile.photos.large} alt=""/>
             ava + description
         </div>
         <PostsContainer/>
