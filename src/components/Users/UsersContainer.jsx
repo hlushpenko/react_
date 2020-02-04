@@ -1,14 +1,12 @@
 import React from 'react';
 import {connect} from "react-redux";
 import {
-    setCurrentPage,
-    setUsers, setUsersTotalCount,
-    subscribe, toggleIsFetching,
-    unsubscribe
+    setCurrentPage, setUsers, setUsersTotalCount,
+    subscribe, toggleIsFetching, unsubscribe
 } from '../../redux/reducers/users-reducer';
 import Users from './Users';
-import Preloader from "../Preloader/Preloader";
 import * as axios from 'axios';
+import Loading from "../Loading/Loading";
 
 
 class UsersContainer extends React.Component {
@@ -35,7 +33,7 @@ class UsersContainer extends React.Component {
 
     render() {
         return <>
-            {this.props.isFetching ? <Preloader/> : null}
+            {this.props.isFetching ? <Loading/> : null}
 
             <Users users={this.props.users}
                    totalUsersCount={this.props.totalUsersCount}
