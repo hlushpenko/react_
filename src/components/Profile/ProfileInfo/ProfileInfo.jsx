@@ -3,7 +3,7 @@ import s from './ProfileInfo.module.css';
 import {Button, Card, Col, ListGroup, Row} from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
 
-const ProfileInfo = (props) => {
+const  ProfileInfo = (props) => {
     return <Row className={s.info}>
         <Col>
             <img className='mx-auto d-block' src={props.profile.photos.large} alt="Ava"/>

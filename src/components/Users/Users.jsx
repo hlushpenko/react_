@@ -35,8 +35,8 @@ const Users = (props) => {
                     <Card.Title>{u.name}</Card.Title>
                     <Card.Text>
                         {u.status}
-                        <div>{"u.location.cityName"}</div>
-                        <div>{"u.location.country"}</div>
+                        {/*<div>{"u.location.cityName"}</div>*/}
+                        {/*<div>{"u.location.country"}</div>*/}
                     </Card.Text>
                     <div>
                         {u.followed
