@@ -1,6 +1,7 @@
 import React from 'react';
 //import s from './Posts.module.css';
 import Post from "./Post/Post";
+import {Button, Form} from "react-bootstrap";
 
 
 const Posts = (props) => {
@@ -18,19 +19,20 @@ const Posts = (props) => {
     };
 
     return (
-        <div>
-            <div>
-                <textarea placeholder="Write post"
-                          onChange={onPostChange}
-                          ref={newPostText}
-                          value={props.postsData.newPostText}/>
-            </div>
-            <div>
-                <button onClick={onAddPost}> Add Post</button>
-            </div>
+        <>
+            <Form>
+                <Form.Group controlId="posts">
+                    <Form.Control placeholder="Write post"
+                                  onChange={onPostChange}
+                                  ref={newPostText}
+                                  value={props.postsData.newPostText}/>
+
+                    <Button onClick={onAddPost}> Add Post</Button>
+                </Form.Group>
+            </Form>
             My posts:
             {posts}
-        </div>
+        </>
     )
 }
 export default Posts;
