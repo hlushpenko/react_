@@ -38,9 +38,12 @@ const Posts = (props) => {
                     </Form.Group>
                     <Button variant='outline-primary' onClick={onAddPost}> Add Post</Button>
                 </Form>
+                <p>
+                    Мої пости:
+                </p>
             </Alert>
 
-            My posts:
+
             {posts}
         </>
     )
