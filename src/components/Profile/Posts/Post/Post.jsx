@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Post.module.css';
-import {Alert} from "react-bootstrap";
+import {Alert, Button} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faHeart} from "@fortawesome/free-solid-svg-icons";
 
@@ -12,8 +12,7 @@ const Post = (props) => {
                 alt=""/>
             {props.text}
             <p>
-                <FontAwesomeIcon icon={faHeart}/>
-                {props.like}
+                <Button variant="outline-info"><FontAwesomeIcon icon={faHeart}/> {props.like}</Button>
             </p>
         </Alert>
     )
