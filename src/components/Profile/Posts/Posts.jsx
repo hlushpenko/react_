@@ -1,11 +1,15 @@
 import React from 'react';
 //import s from './Posts.module.css';
 import Post from "./Post/Post";
-import {Button, Form} from "react-bootstrap";
+import {Alert, Button, Form} from "react-bootstrap";
 
 
 const Posts = (props) => {
-    let posts = props.postsData.posts.map(p => <Post key={p.id} like={p.like} text={p.text}/>);
+    let posts = props.postsData.posts.map(p =>
+        <Post key={p.id}
+              like={p.like}
+              text={p.text}/>
+    );
 
     let newPostText = React.createRef();
 
@@ -20,16 +24,22 @@ const Posts = (props) => {
 
     return (
         <>
-            <Form>
-                <Form.Group controlId="posts">
-                    <Form.Control placeholder="Write post"
-                                  onChange={onPostChange}
-                                  ref={newPostText}
-                                  value={props.postsData.newPostText}/>
+            <Alert variant='secondary'>
+                <Form>
+                    <Form.Group controlId="posts">
+                        <Form.Label>Додайте новий пост на вашу сторінку</Form.Label>
+                        <Form.Control placeholder="Текст поста"
+                                      onChange={onPostChange}
+                                      ref={newPostText}
+                                      value={props.postsData.newPostText}/>
+                        <Form.Text className="text-muted">
+                            Пост буде прив'язано до вашого профілю, його можуть бачити всі зареєстровані користувачі
+                        </Form.Text>
+                    </Form.Group>
+                    <Button variant='outline-primary' onClick={onAddPost}> Add Post</Button>
+                </Form>
+            </Alert>
 
-                    <Button onClick={onAddPost}> Add Post</Button>
-                </Form.Group>
-            </Form>
             My posts:
             {posts}
         </>

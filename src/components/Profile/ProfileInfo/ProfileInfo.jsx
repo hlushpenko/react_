@@ -27,6 +27,7 @@ const  ProfileInfo = (props) => {
                         </Card.Body>
                     </Accordion.Collapse>
                 </Card>
+
                 <Card>
                     <Accordion.Toggle as={Card.Header} eventKey="1">
                         Контакти
@@ -34,9 +35,17 @@ const  ProfileInfo = (props) => {
                     <Accordion.Collapse eventKey="1">
                         <Card.Body>
                             <ListGroup className={s.listInfo}>
-                                <ListGroup.Item>Facebook: {props.profile.contacts.facebook}</ListGroup.Item>
-                                <ListGroup.Item>Website: {props.profile.contacts.website}</ListGroup.Item>
-                                <ListGroup.Item>VK: {props.profile.contacts.vk}</ListGroup.Item>
+
+                                {props.profile.contacts.facebook ?
+                                    <ListGroup.Item>Facebook: {props.profile.contacts.facebook}</ListGroup.Item> : ''}
+
+                                {props.profile.contacts.website ?
+                                    <ListGroup.Item>Website: {props.profile.contacts.website}</ListGroup.Item> : ''}
+
+
+                                {props.profile.contacts.vk ?
+                                    <ListGroup.Item>VK: {props.profile.contacts.vk}</ListGroup.Item> : ''}
+
                                 <ListGroup.Item>Twitter: {props.profile.contacts.twitter}</ListGroup.Item>
                                 <ListGroup.Item>Instagram: {props.profile.contacts.instagram}</ListGroup.Item>
                                 <ListGroup.Item>Youtube: {props.profile.contacts.youtube}</ListGroup.Item>
