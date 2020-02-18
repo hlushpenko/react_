@@ -18,4 +18,4 @@ export const usersAPI = {
                 return response.data;
             });
     }
-}
+};

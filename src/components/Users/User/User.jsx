@@ -27,13 +27,9 @@ const User = (props) => {
 
             </Col>
 
-
             <Col>
-
                 {props.user.followed
                     ? <Button variant="danger" onClick={() => {
-                        // props.unsubscribe(props.user.id)
-
                         axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${props.user.id}`, {
                             withCredentials: true,
                             headers: {
@@ -45,11 +41,9 @@ const User = (props) => {
                                     props.unsubscribe(props.user.id);
                                 }
                             });
-
                     }}> Unsubscribe</Button>
                     : <Button variant="success" onClick={() => {
-                        // props.subscribe(props.user.id)
-                        axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${props.user.id}`, {}, {
+                        axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${props.user.id}`, null, {
                             withCredentials: true,
                             headers: {
                                 "API-KEY": "cda002cd-0608-42f2-bc80-c8912b3da152"
@@ -57,18 +51,15 @@ const User = (props) => {
                         })
                             .then(response => {
                                 if (response.data.resultCode == 0) {
-                                    props.unsubscribe(props.user.id);
+                                    props.subscribe(props.user.id);
                                 }
                             });
-
                     }}> Subscribe</Button>
                 }
             </Col>
         </Row>
-
-
-
     </Alert>
 };
+
 
 export default User;
