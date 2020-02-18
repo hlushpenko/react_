@@ -5,6 +5,7 @@ import userPhoto from "../../assets/img/avatar.jpg";
 import s from "../Users.module.css";
 import Button from "react-bootstrap/Button";
 import * as axios from "axios";
+import {usersAPI} from "../../../api/api";
 // import s from "./User.module.css";
 
 const User = (props) => {
@@ -20,7 +21,6 @@ const User = (props) => {
 
             <Col>
                 {props.user.name}
-
                 {props.user.status}
                 {/*<div>{u.location.cityName}</div>*/}
                 {/*<div>{u.location.country}</div>*/}
@@ -30,30 +30,18 @@ const User = (props) => {
             <Col>
                 {props.user.followed
                     ? <Button variant="danger" onClick={() => {
-                        axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${props.user.id}`, {
-                            withCredentials: true,
-                            headers: {
-                                "API-KEY": "cda002cd-0608-42f2-bc80-c8912b3da152"
+                        usersAPI.subscribeUser(props.user.id).then(response => {
+                            if (response.data.resultCode == 0) {
+                                props.unsubscribe(props.user.id);
                             }
-                        })
-                            .then(response => {
-                                if (response.data.resultCode == 0) {
-                                    props.unsubscribe(props.user.id);
-                                }
-                            });
+                        });
                     }}> Unsubscribe</Button>
                     : <Button variant="success" onClick={() => {
-                        axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${props.user.id}`, null, {
-                            withCredentials: true,
-                            headers: {
-                                "API-KEY": "cda002cd-0608-42f2-bc80-c8912b3da152"
+                        usersAPI.unsubscribeUser(props.user.id).then(response => {
+                            if (response.data.resultCode == 0) {
+                                props.subscribe(props.user.id);
                             }
-                        })
-                            .then(response => {
-                                if (response.data.resultCode == 0) {
-                                    props.subscribe(props.user.id);
-                                }
-                            });
+                        });
                     }}> Subscribe</Button>
                 }
             </Col>

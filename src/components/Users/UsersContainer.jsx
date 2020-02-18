@@ -5,7 +5,6 @@ import {
     subscribe, toggleIsFetching, unsubscribe
 } from '../../redux/reducers/users-reducer';
 import Users from './Users';
-import * as axios from 'axios';
 import Loading from "../Loading/Loading";
 import {usersAPI} from "../../api/api";
 
