@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import userPhoto from "../../assets/img/avatar.jpg";
 import s from "../Users.module.css";
 import Button from "react-bootstrap/Button";
+import * as axios from "axios";
 // import s from "./User.module.css";
 
 const User = (props) => {
@@ -31,10 +32,35 @@ const User = (props) => {
 
                 {props.user.followed
                     ? <Button variant="danger" onClick={() => {
-                        props.unsubscribe(props.user.id)
+                        // props.unsubscribe(props.user.id)
+
+                        axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${props.user.id}`, {
+                            withCredentials: true,
+                            headers: {
+                                "API-KEY": "cda002cd-0608-42f2-bc80-c8912b3da152"
+                            }
+                        })
+                            .then(response => {
+                                if (response.data.resultCode == 0) {
+                                    props.unsubscribe(props.user.id);
+                                }
+                            });
+
                     }}> Unsubscribe</Button>
                     : <Button variant="success" onClick={() => {
-                        props.subscribe(props.user.id)
+                        // props.subscribe(props.user.id)
+                        axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${props.user.id}`, {}, {
+                            withCredentials: true,
+                            headers: {
+                                "API-KEY": "cda002cd-0608-42f2-bc80-c8912b3da152"
+                            }
+                        })
+                            .then(response => {
+                                if (response.data.resultCode == 0) {
+                                    props.unsubscribe(props.user.id);
+                                }
+                            });
+
                     }}> Subscribe</Button>
                 }
             </Col>
