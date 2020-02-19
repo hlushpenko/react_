@@ -1,6 +1,5 @@
 import React from "react";
 import s from './Loading.module.css'
-import ProgressBar from "react-bootstrap/ProgressBar";
 import {Spinner} from "react-bootstrap";
 
 const Loading = () => (
@@ -14,7 +13,5 @@ const Loading = () => (
         <Spinner animation="grow" variant="dark" />
     </div>
 );
-// <ProgressBar className={s.spinner} animated now={100}/>;
-
 
 export default Loading;
