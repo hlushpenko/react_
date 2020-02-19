@@ -2,11 +2,9 @@ import React from "react";
 import {Alert, Col, Nav, Row} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import userPhoto from "../../assets/img/avatar.jpg";
-import s from "../Users.module.css";
 import Button from "react-bootstrap/Button";
-
+import s from "./User.module.css";
 import {usersAPI} from "../../../api/api";
-// import s from "./User.module.css";
 
 const User = (props) => {
     return <Alert variant='secondary'>
@@ -22,9 +20,6 @@ const User = (props) => {
             <Col>
                 {props.user.name}
                 {props.user.status}
-                {/*<div>{u.location.cityName}</div>*/}
-                {/*<div>{u.location.country}</div>*/}
-
             </Col>
 
             <Col>

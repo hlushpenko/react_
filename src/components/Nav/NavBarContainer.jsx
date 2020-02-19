@@ -22,7 +22,8 @@ class NavBarContainer extends React.Component {
 
 const mapStateToProps = (state) => ({
     isAuth: state.auth.isAuth,
-    login: state.auth.login
+    login: state.auth.login,
+    id: state.auth.userId
 });
 
 export default connect(mapStateToProps, {setAuthUserData})(NavBarContainer);

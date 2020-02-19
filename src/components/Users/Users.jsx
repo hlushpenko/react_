@@ -2,7 +2,7 @@ import React from "react";
 import s from "./Users.module.css";
 import {Container} from "react-bootstrap";
 import User from "./User/User";
-
+// import ReactPaginate from 'react-paginate';
 const Users = (props) => {
 
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
@@ -21,6 +21,8 @@ const Users = (props) => {
                              }}>{p}</span>
             })}
         </div>
+
+
 
 
         {props.users.map(u =>
