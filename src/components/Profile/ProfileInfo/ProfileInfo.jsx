@@ -1,6 +1,6 @@
 import React from "react";
 import s from './ProfileInfo.module.css';
-import {Button, Card, Col, ListGroup, Row} from "react-bootstrap";
+import {Card, Col, ListGroup, Row} from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
 
 const  ProfileInfo = (props) => {

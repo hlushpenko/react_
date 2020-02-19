@@ -1,9 +1,6 @@
 import React from "react";
 import s from "./Users.module.css";
-import userPhoto from "../assets/img/avatar.jpg";
-import Button from 'react-bootstrap/Button';
-import {Alert, Card, Container, Nav} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import {Container} from "react-bootstrap";
 import User from "./User/User";
 
 const Users = (props) => {
