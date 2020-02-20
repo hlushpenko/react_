@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca2f2c25-8a9c-46ca-a59e-7d74888cbb17" name="Default Changelist" comment="Disable subscribe/unsubscribe buttons when response in fetching">
+    <list default="true" id="ca2f2c25-8a9c-46ca-a59e-7d74888cbb17" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/User/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/User/User.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/users-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/NavBarContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/NavBarContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/auth-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/profile-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +142,7 @@
       <workItem from="1582128046218" duration="671000" />
       <workItem from="1582144865138" duration="2994000" />
       <workItem from="1582204426721" duration="591000" />
-      <workItem from="1582215669181" duration="285000" />
+      <workItem from="1582215669181" duration="2470000" />
     </task>
     <task id="LOCAL-00001" summary="Add props to post">
       <created>1578239902763</created>
@@ -301,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582101381884</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="redux-thunk users">
+      <created>1582216013041</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1582216013041</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +345,8 @@
     <MESSAGE value="FIX. follow-unfollow api" />
     <MESSAGE value="63. DAL, axios.create + HW" />
     <MESSAGE value="Disable subscribe/unsubscribe buttons when response in fetching" />
-    <option name="LAST_COMMIT_MESSAGE" value="Disable subscribe/unsubscribe buttons when response in fetching" />
+    <MESSAGE value="redux-thunk users" />
+    <option name="LAST_COMMIT_MESSAGE" value="redux-thunk users" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="182" key="#ESLint" timestamp="1578139393070">
@@ -363,12 +368,12 @@
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.49.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577986093269" />
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.52.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1580149910890" />
     <state x="2420" y="316" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1982.49.1218.1024/62.0.1858.1080@1982.49.1218.1024" timestamp="1579542991579" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1582128911090">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="2207" y="52" key="CommitChangelistDialog2" timestamp="1582216012457">
+      <screen x="1920" y="52" width="1280" height="984" />
     </state>
     <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1582128911090" />
     <state x="430" y="0" key="CommitChangelistDialog2/1920.52.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1580905706211" />
-    <state x="2207" y="52" key="CommitChangelistDialog2/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1582039440176" />
+    <state x="2207" y="52" key="CommitChangelistDialog2/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1582216012457" />
     <state x="2255" y="49" key="CommitChangelistDialog2/1982.49.1218.1024/62.0.1858.1080@1982.49.1218.1024" timestamp="1579546027313" />
     <state x="478" y="0" key="CommitChangelistDialog2/1982.49.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1578511899536" />
     <state x="2255" y="52" key="CommitChangelistDialog2/1982.52.1218.1024/62.0.1858.1080@1982.52.1218.1024" timestamp="1580410200620" />
@@ -484,12 +489,12 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="712" y="281" width="540" height="524" key="StructurePopup/1982.49.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1578506634146" />
-    <state x="275" y="94" key="Vcs.Push.Dialog.v2" timestamp="1582101386702">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="2177" y="179" key="Vcs.Push.Dialog.v2" timestamp="1582216015723">
+      <screen x="1920" y="52" width="1280" height="984" />
     </state>
     <state x="275" y="94" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1582101386702" />
     <state x="386" y="134" key="Vcs.Push.Dialog.v2/1920.52.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1580146877917" />
-    <state x="2177" y="179" key="Vcs.Push.Dialog.v2/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1582039442433" />
+    <state x="2177" y="179" key="Vcs.Push.Dialog.v2/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1582216015723" />
     <state x="2227" y="181" key="Vcs.Push.Dialog.v2/1982.49.1218.1024/62.0.1858.1080@1982.49.1218.1024" timestamp="1579546029687" />
     <state x="2227" y="184" key="Vcs.Push.Dialog.v2/1982.52.1218.1024/62.0.1858.1080@1982.52.1218.1024" timestamp="1580410203909" />
     <state x="647" y="250" key="run.anything.popup" timestamp="1578504479864">
@@ -500,5 +505,17 @@
       <screen x="1982" y="49" width="1218" height="1024" />
     </state>
     <state x="2223" y="270" width="672" height="678" key="search.everywhere.popup/1982.49.1218.1024/62.0.1858.1080@1982.49.1218.1024" timestamp="1579265328892" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx</url>
+          <line>13</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
