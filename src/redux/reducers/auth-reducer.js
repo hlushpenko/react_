@@ -33,5 +33,5 @@ export const getAuthUserData = () => (dispatch) => {
             dispatch(setAuthUserData(id, email, login));
         }
     });
-}
+};
 export default authReducer;

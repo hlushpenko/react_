@@ -6,7 +6,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import {Container, Form} from "react-bootstrap";
-import {Redirect} from "react-router-dom";
 
 const Dialogs = (props) => {
     let dialogs = props.dialogsData.dialogs.map(d => <DialogItem key={d.id} name={d.name}/>);
@@ -23,9 +22,7 @@ const Dialogs = (props) => {
         props.onChangeMessage(text);
     };
 
-    if (!props.isAuth) {
-        return <Redirect to='/login/'/>
-    }
+
 
 
     return <Container>
