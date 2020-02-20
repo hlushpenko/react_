@@ -16,9 +16,9 @@ export const usersAPI = {
             });
     },
     subscribeUser(id){
-        return instance.delete('follow/'+id);
+        return instance.post('follow/'+id);
     },
     unsubscribeUser(id){
-        return instance.post('follow/'+id);
+        return instance.delete('follow/'+id);
     }
 };
