@@ -55,7 +55,6 @@ const  ProfileInfo = (props) => {
                     </Accordion.Collapse>
                 </Card>
             </Accordion>
-
         </Col>
     </Row>
 };
