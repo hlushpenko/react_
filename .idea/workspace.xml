@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ca2f2c25-8a9c-46ca-a59e-7d74888cbb17" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/auth-reduser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +142,7 @@
       <workItem from="1582204426721" duration="591000" />
       <workItem from="1582215669181" duration="4989000" />
       <workItem from="1582221258206" duration="4117000" />
+      <workItem from="1583425877399" duration="1601000" />
     </task>
     <task id="LOCAL-00001" summary="Add props to post">
       <created>1578239902763</created>
@@ -384,12 +384,12 @@
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.49.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1577986093269" />
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.52.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1580149910890" />
     <state x="2420" y="316" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1982.49.1218.1024/62.0.1858.1080@1982.49.1218.1024" timestamp="1579542991579" />
-    <state x="2207" y="52" key="CommitChangelistDialog2" timestamp="1582225391737">
+    <state x="2207" y="52" key="CommitChangelistDialog2" timestamp="1582225424494">
       <screen x="1920" y="52" width="1280" height="984" />
     </state>
     <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1582128911090" />
     <state x="430" y="0" key="CommitChangelistDialog2/1920.52.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1580905706211" />
-    <state x="2207" y="52" key="CommitChangelistDialog2/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1582225391737" />
+    <state x="2207" y="52" key="CommitChangelistDialog2/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1582225424494" />
     <state x="2255" y="49" key="CommitChangelistDialog2/1982.49.1218.1024/62.0.1858.1080@1982.49.1218.1024" timestamp="1579546027313" />
     <state x="478" y="0" key="CommitChangelistDialog2/1982.49.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1578511899536" />
     <state x="2255" y="52" key="CommitChangelistDialog2/1982.52.1218.1024/62.0.1858.1080@1982.52.1218.1024" timestamp="1580410200620" />
@@ -506,12 +506,12 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="712" y="281" width="540" height="524" key="StructurePopup/1982.49.1218.1024/62.0.1858.1080@62.0.1858.1080" timestamp="1578506634146" />
-    <state x="2177" y="179" key="Vcs.Push.Dialog.v2" timestamp="1582218289412">
+    <state x="2177" y="179" key="Vcs.Push.Dialog.v2" timestamp="1582225426356">
       <screen x="1920" y="52" width="1280" height="984" />
     </state>
     <state x="275" y="94" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1582101386702" />
     <state x="386" y="134" key="Vcs.Push.Dialog.v2/1920.52.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1580146877917" />
-    <state x="2177" y="179" key="Vcs.Push.Dialog.v2/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1582218289412" />
+    <state x="2177" y="179" key="Vcs.Push.Dialog.v2/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1582225426356" />
     <state x="2227" y="181" key="Vcs.Push.Dialog.v2/1982.49.1218.1024/62.0.1858.1080@1982.49.1218.1024" timestamp="1579546029687" />
     <state x="2227" y="184" key="Vcs.Push.Dialog.v2/1982.52.1218.1024/62.0.1858.1080@1982.52.1218.1024" timestamp="1580410203909" />
     <state x="647" y="250" key="run.anything.popup" timestamp="1578504479864">
