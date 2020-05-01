@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Nav.module.css';
+import s from './NavBar.module.css';
 import {Navbar, Nav} from 'react-bootstrap';
 import {Link} from 'react-router-dom'
 

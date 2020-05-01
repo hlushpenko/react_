@@ -19,10 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca2f2c25-8a9c-46ca-a59e-7d74888cbb17" name="Default Changelist" comment="update package.json">
+    <list default="true" id="ca2f2c25-8a9c-46ca-a59e-7d74888cbb17" name="Default Changelist" comment="NavBar Container use compose">
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus/ProfileStatus.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus/ProfileStatus.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/NavBarContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/NavBarContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/Nav.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/NavBarContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBarContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +64,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -73,19 +80,19 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Nick\WebstormProjects\react_\src\components\assets" />
-      <recent name="C:\Users\nickh\OneDrive\Рабочий стол\react_\src\components\Profile" />
-      <recent name="C:\Users\nickh\OneDrive\Рабочий стол\react_\src\components\Header" />
-      <recent name="C:\Users\nickh\OneDrive\Рабочий стол\react_\src\components\Nav" />
-      <recent name="C:\Users\nickh\OneDrive\Рабочий стол\react_\src\components\Footer" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nickh\WebstormProjects\react_\src\components\Profile" />
       <recent name="C:\Users\Nick\WebstormProjects\react_\src\components" />
       <recent name="C:\Users\Nick\WebstormProjects\react_\src\components\Profile\Posts" />
       <recent name="C:\Users\Nick\WebstormProjects\react_\src\components\Dialogs" />
       <recent name="C:\Users\Nick\WebstormProjects\react_\src\components\Users" />
-      <recent name="C:\Users\Nick\WebstormProjects\react_\src\redux\reducers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nickh\WebstormProjects\react_\src\components\Profile\ProfileInfo" />
+      <recent name="C:\Users\Nick\WebstormProjects\react_\src\components\assets" />
+      <recent name="C:\Users\nickh\OneDrive\Рабочий стол\react_\src\components\Profile" />
+      <recent name="C:\Users\nickh\OneDrive\Рабочий стол\react_\src\components\Header" />
+      <recent name="C:\Users\nickh\OneDrive\Рабочий стол\react_\src\components\Nav" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -151,7 +158,7 @@
       <workItem from="1582215669181" duration="4989000" />
       <workItem from="1582221258206" duration="4117000" />
       <workItem from="1583425877399" duration="1601000" />
-      <workItem from="1588351193198" duration="1465000" />
+      <workItem from="1588351193198" duration="6264000" />
     </task>
     <task id="LOCAL-00001" summary="Add props to post">
       <created>1578239902763</created>
@@ -335,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588351883253</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="NavBar Container use compose">
+      <created>1588352700614</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1588352700614</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +392,8 @@
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Redirect" />
     <MESSAGE value="update package.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="update package.json" />
+    <MESSAGE value="NavBar Container use compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="NavBar Container use compose" />
   </component>
   <component name="WindowStateProjectService">
     <state x="293" y="183" key="#Notifications" timestamp="1580146924569">
@@ -485,10 +500,11 @@
     </state>
     <state x="463" y="166" key="SettingsEditor/1920.52.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1579793320332" />
     <state x="2202" y="209" key="SettingsEditor/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1582221198720" />
-    <state x="2177" y="100" key="Vcs.Push.Dialog.v2" timestamp="1588351887921">
-      <screen x="1920" y="-27" width="1280" height="984" />
+    <state x="386" y="134" key="Vcs.Push.Dialog.v2" timestamp="1588352702806">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="275" y="94" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1582101386702" />
+    <state x="386" y="134" key="Vcs.Push.Dialog.v2/1920.-27.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1588352702806" />
     <state x="2177" y="100" key="Vcs.Push.Dialog.v2/1920.-27.1280.984/0.0.1920.1040@1920.-27.1280.984" timestamp="1588351887921" />
     <state x="386" y="134" key="Vcs.Push.Dialog.v2/1920.52.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1580146877917" />
     <state x="2177" y="179" key="Vcs.Push.Dialog.v2/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1582225426356" />
@@ -497,5 +513,17 @@
       <screen x="1920" y="-27" width="1280" height="984" />
     </state>
     <state x="1920" y="-27" width="1296" height="737" key="dock-window-1/1920.-27.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1588352658612" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus/ProfileStatus.jsx</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
