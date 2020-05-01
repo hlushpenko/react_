@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from "./NavBar";
 import {getAuthUserData} from "../../redux/reducers/auth-reducer";
 import {connect} from "react-redux";
+import {compose} from "redux";
 
 class NavBarContainer extends React.Component {
     componentDidMount() {
@@ -19,4 +20,4 @@ const mapStateToProps = (state) => ({
     id: state.auth.userId
 });
 
-export default connect(mapStateToProps, {getAuthUserData})(NavBarContainer);
+export default compose (connect(mapStateToProps, {getAuthUserData})) (NavBarContainer);

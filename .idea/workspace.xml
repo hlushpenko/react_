@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca2f2c25-8a9c-46ca-a59e-7d74888cbb17" name="Default Changelist" comment="">
+    <list default="true" id="ca2f2c25-8a9c-46ca-a59e-7d74888cbb17" name="Default Changelist" comment="update package.json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/NavBarContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/NavBarContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +151,7 @@
       <workItem from="1582215669181" duration="4989000" />
       <workItem from="1582221258206" duration="4117000" />
       <workItem from="1583425877399" duration="1601000" />
-      <workItem from="1588351193198" duration="644000" />
+      <workItem from="1588351193198" duration="1465000" />
     </task>
     <task id="LOCAL-00001" summary="Add props to post">
       <created>1578239902763</created>
@@ -310,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582219884443</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="update package.json">
+      <created>1588351883253</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1588351883253</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +377,8 @@
     <MESSAGE value="redux-thunk users" />
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Redirect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redirect" />
+    <MESSAGE value="update package.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="update package.json" />
   </component>
   <component name="WindowStateProjectService">
     <state x="293" y="183" key="#Notifications" timestamp="1580146924569">
@@ -459,12 +485,17 @@
     </state>
     <state x="463" y="166" key="SettingsEditor/1920.52.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1579793320332" />
     <state x="2202" y="209" key="SettingsEditor/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1582221198720" />
-    <state x="2177" y="179" key="Vcs.Push.Dialog.v2" timestamp="1582225426356">
-      <screen x="1920" y="52" width="1280" height="984" />
+    <state x="2177" y="100" key="Vcs.Push.Dialog.v2" timestamp="1588351887921">
+      <screen x="1920" y="-27" width="1280" height="984" />
     </state>
     <state x="275" y="94" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1582101386702" />
+    <state x="2177" y="100" key="Vcs.Push.Dialog.v2/1920.-27.1280.984/0.0.1920.1040@1920.-27.1280.984" timestamp="1588351887921" />
     <state x="386" y="134" key="Vcs.Push.Dialog.v2/1920.52.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1580146877917" />
     <state x="2177" y="179" key="Vcs.Push.Dialog.v2/1920.52.1280.984/0.0.1920.1040@1920.52.1280.984" timestamp="1582225426356" />
     <state x="2227" y="184" key="Vcs.Push.Dialog.v2/1982.52.1218.1024/62.0.1858.1080@1982.52.1218.1024" timestamp="1580410203909" />
+    <state x="1920" y="-27" width="1296" height="737" key="dock-window-1" timestamp="1588352658612">
+      <screen x="1920" y="-27" width="1280" height="984" />
+    </state>
+    <state x="1920" y="-27" width="1296" height="737" key="dock-window-1/1920.-27.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1588352658612" />
   </component>
 </project>
