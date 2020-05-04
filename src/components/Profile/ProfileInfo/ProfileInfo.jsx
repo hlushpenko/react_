@@ -1,9 +1,9 @@
 import React from "react";
 // import s from './ProfileInfo.module.css';
-import {Card, Col, ListGroup, Row} from "react-bootstrap";
+import {Col, ListGroup, Row} from "react-bootstrap";
 import ProfileStatus from "./ProfileStatus/ProfileStatus";
 
-const ProfileInfo = (props) => {
+const  ProfileInfo = (props) => {
     return (
         <Row>
             <Col>
@@ -12,8 +12,9 @@ const ProfileInfo = (props) => {
             <Col>
                 <ListGroup variant="flush">
 
-                    <ProfileStatus aboutMe={props.profile.aboutMe}/>
-                    {/*<ListGroup.Item>Про мене: {props.profile.aboutMe}</ListGroup.Item>*/}
+                    <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
+
+
                     <ListGroup.Item>{props.profile.lookingForAJob ? 'Шукаю роботу' : 'Вже маю роботу'}</ListGroup.Item>
                     {props.profile.lookingForAJobDescription ?
                         <ListGroup.Item>{props.profile.lookingForAJobDescription}</ListGroup.Item> : ''}
