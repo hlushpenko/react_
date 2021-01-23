@@ -8,7 +8,8 @@ import Button from "react-bootstrap/Button";
 import {Container, Form} from "react-bootstrap";
 
 const Dialogs = (props) => {
-    let dialogs = props.dialogsData.dialogs.map(d => <DialogItem key={d.id} name={d.name}/>);
+    let dialogs = props.dialogsData.dialogs.map(d => <DialogItem key={d.id} id={d.id} name={d.name}/>);
+
     let messages = props.dialogsData.messages.map(m => <Message key={m.id} message={m.message}/>);
 
     let newMessageText = React.createRef();
@@ -23,12 +24,14 @@ const Dialogs = (props) => {
     };
 
 
-
-
     return <Container>
         <Row>
-            <Col className={s.dialogs}> {dialogs} </Col>
-            <Col>            {messages}
+            <Col className={s.dialogs}>
+                {dialogs}
+            </Col>
+
+            <Col>
+                {messages}
                 <Form>
                     <Form.Control type="text" placeholder="Write message"
                                   value={props.dialogsData.newMessageText} onChange={messageOnChange}

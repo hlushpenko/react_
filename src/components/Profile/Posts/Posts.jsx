@@ -27,7 +27,7 @@ const Posts = (props) => {
             <Alert variant='secondary'>
                 <Form>
                     <Form.Group controlId="posts">
-                        <Form.Label>Додайте новий пост на вашу сторінку</Form.Label>
+                        <Form.Label>Додайте новий пост на вашу сторінку:</Form.Label>
                         <Form.Control placeholder="Текст поста"
                                       onChange={onPostChange}
                                       ref={newPostText}
@@ -38,11 +38,11 @@ const Posts = (props) => {
                     </Form.Group>
                     <Button variant='outline-primary' onClick={onAddPost}> Add Post</Button>
                 </Form>
-                <p>
-                    Мої пости:
-                </p>
-            </Alert>
 
+            </Alert>
+            <p>
+                Мої пости:
+            </p>
 
             {posts}
         </>

@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 
 const NavBar = (props) => {
     return <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky='top'>
-        <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="/">Valetta</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
